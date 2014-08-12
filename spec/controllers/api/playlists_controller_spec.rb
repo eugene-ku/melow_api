@@ -2,16 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Api::PlaylistsController, :type => :controller do
 
-  describe "GET user:references" do
+  describe "GET index" do
     it "returns http success" do
-      get :user:references
-      expect(response).to be_success
-    end
-  end
-
-  describe "GET title" do
-    it "returns http success" do
-      get :title
+      get :index
       expect(response).to be_success
     end
   end

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  namespace :api do
+  get 'playlists/index'
+  end
+
   namespace :api do 
     resources :users, except: [:new, :edit] 
     resources :playlists, except: [:new, :edit] 

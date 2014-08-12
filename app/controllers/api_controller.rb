@@ -1,4 +1,6 @@
 class ApiController < ApplicationController  
-  respond_to :json
+  include ActionController::MimeResponds 
+  include ActionController::ImplicitRender
   
+  respond_to :json
 end
